@@ -49,6 +49,9 @@ sudo apt install pulseeffects -y
 : Install PCSCD Needed for Yubico Authenticator
 sudo apt install pcscd -y
 
+: Install vim
+sudo apt install vim -y
+
 : Set 12 hour time format
 gsettings set org.gnome.desktop.interface clock-format 12h
 
