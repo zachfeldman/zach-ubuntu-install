@@ -23,6 +23,9 @@ set -euxo pipefail
 # : Install Tilix
 # sudo apt-get install tilix -y
 
+# : Copy default Tilix config in
+# dconf load /com/gexperts/Tilix/ < zach-default.dconf
+
 # : Install 1Password
 # curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg
 # echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/1password-archive-keyring.gpg] https://downloads.1password.com/linux/debian/amd64 stable main' | sudo tee /etc/apt/sources.list.d/1password.list
@@ -40,8 +43,8 @@ set -euxo pipefail
 # : Install PulseEffects
 # sudo apt install pulseeffects -y
 
-: Install PCSCD Needed for Yubico Authenticator
-sudo apt install pcscd -y
+# : Install PCSCD Needed for Yubico Authenticator
+# sudo apt install pcscd -y
 
 # : Set 12 hour time format
 # gsettings set org.gnome.desktop.interface clock-format 12h
